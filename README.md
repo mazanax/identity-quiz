@@ -1,6 +1,6 @@
 # How to deploy
 
-Local machine
+### Local machine
 ```
 #!/usr/bin/env bash
 
@@ -30,7 +30,7 @@ docker push quiz:$TAG
 docker push quiz:latest
 ```
 
-Server
+### Server
 ```
 # docker-compose.yml for example :)
 
