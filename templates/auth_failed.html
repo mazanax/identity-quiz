@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ 'Ошибка авторизации' if lang == 'ru' else 'Login unsuccessful' }}</title>
+</head>
+<body>
+<div>{{ 'Ошибка авторизации' if lang == 'ru' else 'Login unsuccessful' }}: {{ err }}</div>
+<script>
+    setTimeout(() => {
+        window.close();
+    }, 5000);
+</script>
+</body>
+</html>

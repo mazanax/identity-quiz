@@ -1,0 +1,55 @@
+.logo {
+    max-width: 120px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.img-wrapper {
+    position: relative;
+}
+
+.share-icon {
+    background: #007bff;
+    width: 36px;
+    height: 36px;
+}
+
+.img-checked {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    font-size: 18px;
+    color: #fff;
+    background: #007bff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.social-icon {
+    width: 36px;
+    height: 36px;
+}
+
+.btn-social {
+    height: 44px;
+    width: 44px;
+    background: none;
+    border: 0;
+    margin: 0 5px;
+}
+
+.btn-social:hover,
+.btn-social:active,
+.btn-social:focus {
+    background: #c0c0c0!important;
+}
+
+@media (min-width: 576px) {
+    .logo {
+        max-width: 250px;
+    }
+}

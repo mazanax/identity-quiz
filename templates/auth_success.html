@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ 'Успешная авторизация' if lang == 'ru' else 'Login successful' }}</title>
+</head>
+<body>
+<div>{{ 'Успешная авторизация' if lang == 'ru' else 'Login successful' }}</div>
+<script>
+    window.opener.postMessage(JSON.stringify({token: '{{ token }}'}), 'http://localhost:8080');
+    localStorage.setItem('token', '{{ token }}');
+
+    setTimeout(() => {
+        window.close();
+        window.onunload = refreshParent;
+        function refreshParent() {
+            window.opener.location.reload();
+        }
+    }, 400);
+</script>
+</body>
+</html>

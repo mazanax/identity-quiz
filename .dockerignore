@@ -1,0 +1,8 @@
+.idea
+__pycache__
+frontend/.idea
+frontend/node_modules
+venv
+static/
+build.sh
+quiz.db
